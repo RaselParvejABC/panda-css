@@ -1,0 +1,145 @@
+body {
+  width: 100vmin;
+  height: 100vmin;
+  margin: 0 auto;
+  padding: 200px;
+  background-color: lightgray;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-centering-only-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#head {
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+}
+
+.eye {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#left-eye {
+  top: 30%;
+  left: 16%;
+  background-image: radial-gradient(
+    circle at bottom 40% right 40%,
+    white 3%,
+    black 15%,
+    white 45%,
+    black 55%
+  );
+}
+
+#right-eye {
+  top: 30%;
+  right: 16%;
+  background-image: radial-gradient(
+    circle at bottom 40% left 40%,
+    white 3%,
+    black 15%,
+    white 45%,
+    black 55%
+  );
+}
+
+.ear {
+  width: 25%;
+  height: 25%;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#left-ear {
+  top: -4%;
+  left: 10%;
+  z-index: -1;
+}
+
+#right-ear {
+  top: -4%;
+  right: 10%;
+  z-index: -1;
+}
+
+#nose {
+  width: 10%;
+  height: 5%;
+  background-color: black;
+  position: absolute;
+  bottom: 33%;
+  left: 45%;
+  border-radius: 20%;
+}
+
+#lips {
+  width: 30%;
+  height: 2%;
+  background-color: black;
+  position: absolute;
+  bottom: 20%;
+  left: 35%;
+  border-radius: 20%;
+}
+
+#torso {
+  width: 30vh;
+  height: 30vh;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: -20%;
+}
+
+#hands {
+  width: 35vh;
+  height: 35vh;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+  top: -45vh;
+  z-index: -1;
+}
+#legs {
+  width: 30vh;
+  height: 40vh;
+  border-radius: 20%;
+  background-color: black;
+  position: relative;
+  top: -50vh;
+  z-index: -1;
+}
+
+#between-legs {
+  width: 10vh;
+  height: 20vh;
+  background-color: lightgray;
+  border-radius: 30%;
+  position: relative;
+  top: -68vh;
+  z-index: 3;
+}
+
+#ground {
+  width: 50vh;
+  height: 30vh;
+  background-color: lightgray;
+  position: absolute;
+  top: 70vh;
+}
